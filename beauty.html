@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 5px black;
+    padding: 2px black;
+    box-sizing: border-box;
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCLc-iGKRpiaImu3PUaPEnRlWuRa2K97_lHnmK0QOoIPTVmn70T8W1HjAY8hLb4irmVo&usqp=CAU);
+header {
+    background-color: #72e1ad;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-item {
+    border: 1px solid#2e0303;
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.827);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty Product App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Beauty Product App</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Welcome to Our Beauty Store</h2>
+                <p>Discover the best beauty products tailored for you.</p>
+            </section>
+            <section id="products">
+                <h2>Our Products</h2>
+                <div class="product-list">
+                    <!-- Product items will be inserted here -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Beauty Product App. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const products = [
+        {
+            name: 'Lipstick',
+            image:'images/lipstick.jpg',
+            description: 'A vibrant red lipstick for all occasions.',
+            price: '@299'
+        },
+        {
+            name: 'Foundation',
+            image: 'images/foundation.jpg',
+            description: 'A smooth foundation that matches your skin tone.',
+            price: '@599'
+        },
+        // Add more products as needed
+    ];
+
+    const productList = document.querySelector('.product-list');
+
+    products.forEach(product => {
+        const productItem = document.createElement('div');
+        productItem.classList.add('product-item');
+
+        productItem.innerHTML = `
+            <img src="${product.image}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <p><strong>${product.price}</strong></p>
+        `;
+
+        productList.appendChild(productItem);
+    });
+});
+
+    </script>
+    </html>
+     
+</body>
+</html>
