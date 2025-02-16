@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap-select.min.css"
+    />
+    <!-- icon css-->
+    <link rel="stylesheet" href="assets/elagent-icon/style.css" />
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css" />
+    <link rel="stylesheet" href="assets/font-size/css/rvfs.css" />
+    <link rel="stylesheet" href="assets/animation/animate.css" />
+    <link rel="stylesheet" href="assets/video/video-js.css" />
+    <link
+      rel="stylesheet"
+      href="assets/tooltipster/css/tooltipster.bundle.css"
+    />
+    <link rel="stylesheet" href="assets/prism/prism.css" />
+    <link rel="stylesheet" href="assets/prism/prism-coy.css" />
+    <link rel="stylesheet" href="assets/magnify-pop/magnific-popup.css" />
+    <link
+      rel="stylesheet"
+      href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Matias - Personal Portfolio Template Documentation</title>
+  </head>
+
+  <body
+    class="doc full-width-doc sticky-nav-doc onepage-doc"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="0"
+  >
+    <div class="body_wrapper sticky_menu">
+      <nav class="navbar navbar-expand-lg menu_one menu_logo_change">
+        <div class="container-fluid pl-60 pr-60">
+          <a class="" href="index.html">
+            <img src="data:image/jpeg;base64,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" alt="logo" style="width: 150px" />
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="menu_toggle">
+              <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="hamburger-cross">
+                <span></span>
+                <span></span>
+              </span>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav menu ml-auto">
+              <li class="nav-item">
+                <a
+                  href="https//.themeforest.net/user/theme_ocean/"
+                  class="nav-link dropdown-toggle"
+                  >Request Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://themeforest.net/user/theme_ocean/"
+                  class="nav-link dropdown-toggle"
+                  >Awesome templates</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link dropdown-toggle">Purchase</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://themeforest.net/user/theme_ocean/"
+                  class="action_btn btn_small_two"
+                  >Submit a Ticket <i class="arrow_right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="doc_documentation_area onepage_doc_area" id="sticky_doc">
+        <div class="overlay_bg"></div>
+        <div class="container-fluid pl-60 pr-60">
+          <div class="row doc-container">
+            <div class="col-lg-2 doc_mobile_menu doc-sidebar display_none">
+              <!-- Start Asid area  -->
+              <aside class="doc_left_sidebarlist">
+                <h3 class="nav_title">Doc NAVIGATION</h3>
+                <div class="scroll">
+                  <ul class="list-unstyled nav-sidebar doc-nav">
+                    <li class="nav-item">
+                      <a href="#getting_started" class="nav-link"
+                        ><img
+                          src="data:image/jpeg;base64,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"
+                          alt=""
+                        />Getting Started</a
+                      >
+                      <ul class="list-unstyled dropdown_nav">
+                        <li class="nav-item">
+                          <a href="#requirements" class="nav-link"
+                            >Requirements</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#whats_included" class="nav-link"
+                            >What's Included</a
+                          >
+                        </li>
+                      </ul>
+                      <span class="icon">
+                        <i class="icon_plus"></i>
+                        <i class="icon_minus-06"></i>
+                      </span>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#react_installation" class="nav-link"
+                        ><img src="img/side-nav/cmm4.png" alt="Matias" />React
+                        Installation</a
+                      >
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="#basic_site_setting" class="nav-link"
+                        ><img src="img/side-nav/rc12.png" alt="Matias" />Basic
+                        Site Setting</a
+                      >
+                      <ul class="list-unstyled dropdown_nav">
+                        <li class="nav-item">
+                          <a
+                            href="#change_site_title_and_favicon"
+                            class="nav-link"
+                            >Change Site Title and Favicon</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#change_logo" class="nav-link"
+                            >Change Logo</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#customize_menu" class="nav-link"
+                            >Customize Menu</a
+                          >
+                        </li>
+                      </ul>
+                      <span class="icon">
+                        <i class="icon_plus"></i>
+                        <i class="icon_minus-06"></i>
+                      </span>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#page" class="nav-link"
+                        ><img
+                          src="img/side-nav/folder.png"
+                          alt="Matias"
+                        />Page</a
+                      >
+                      <ul class="list-unstyled dropdown_nav">
+                        <li class="nav-item">
+                          <a href="#customize_components" class="nav-link"
+                            >Customize Components</a
+                          >
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="#create_new_section" class="nav-link"
+                            >Create a new section</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#create_new_page" class="nav-link"
+                            >Create a new page</a
+                          >
+                        </li>
+                      </ul>
+                      <span class="icon">
+                        <i class="icon_plus"></i>
+                        <i class="icon_minus-06"></i>
+                      </span>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="#styles" class="nav-link"
+                        ><img
+                          src="img/side-nav/color-palette.png"
+                          alt="Matias"
+                        />styles</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#change-log" class="nav-link"
+                        ><img
+                          src="img/side-nav/document2.png"
+                          alt="Matias"
+                        />Change Log</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+              <!-- End Asid area  -->
+            </div>
+            <div class="col-lg-8 col-md-8">
+              <div class="documentation_info" id="post">
+                <article
+                  class="documentation_body doc-section pt-0"
+                  id="getting_started"
+                >
+                  <div class="shortcode_title">
+                    <h1>Getting Started</h1>
+                    <p>
+                      <span
+                        >Welcome to Matias <b>Next.js React</b> template!</span
+                      >
+                      We would like to thank you for choosing our template -
+                      Matias.
+                    </p>
+                    <p>
+                      It’s built with latest version of <b>Next.js</b>. Matias is a creative and unique CV/resume template for developer, designer, programmer, freelancer, writer, lawyer, musician, trainer, photographer or any other professions & Can be used for Personal Pages. This template contains a single page and also multiple pages with a clean & smooth design. Each element of this design is fully creative. The HTML files are fully customizable and all elements are in groups and can easily identify by the group name as well.
+                    </p>
+                  </div>
+                  <div class="shortcode_title" id="requirements">
+                    <h2>Requirements</h2>
+                    <p>
+                      There are system requirements in order to install and
+                      setup Matias template and its components properly. Make
+                      sure that you are installed
+                      <strong>Node.js </strong> version~14.6.0 or newer .
+                    </p>
+                  </div>
+                  <h3 class="c_head load-order-2" id="php-configuration-limits">
+                    Recommended node
+                  </h3>
+                  <img
+                    class="w-100 img-thumbnail"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaaDPGk4TB1fVhB71ZNuRRrf-68QfaNG19TQ&s"
+                    alt="installation"
+                  />
+
+                  <br /><br />
+                  <h3 class="c_head load-order-2" id="php-configuration-limits">
+                    If you are familiar to Yarn !
+                  </h3>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <strong>First , install Yarn globally </strong>
+                        -
+                        <ol class="ordered-list">
+                          <li>Open you command prompt</li>
+                          <li><code>npm install --global yarn</code></li>
+                          <h6 style="padding-left: 1rem">
+                            Check installation :
+                          </h6>
+                          <li><code>yarn --version</code></li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="shortcode_title" id="whats_included">
+                    <h2>What's Included</h2>
+                    <p>
+                      After purchasing Matias template on themeforest.net
+                      with your themeforest account, go to your Download
+                      page. You can download Matias template. Matias template
+                      package which contains the following files:
+                    </p>
+                    <img
+                      class="w-100 img-thumbnail"
+                      src="https://s3.envato.com/files/491918732/00_Preview%20image.__large_preview.png"
+                      alt="whats-included"
+                    />
+                  </div>
+                  <h3 class="c_head load-order-2" id="template-package">
+                    The contents of the template package downloaded from
+                    themeforest:
+                  </h3>
+                  <div class="steps-panel">
+                    <ul class="ordered-list">
+                      <li>
+                        <strong>Matias.zip</strong> - An Installable next.js
+                        react template zip file. this file you need to upload to
+                        react.
+                      </li>
+
+                      <li>
+                        <strong>Documentation</strong> - This folder contains
+                        what you are reading now :
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <article
+                  class="documentation_body doc-section"
+                  id="react_installation"
+                >
+                  <div class="shortcode_title">
+                    <h2>Run Next.js Template</h2>
+                    <p>
+                      Please follow the instructions how you can run react
+                      template on your hosting:
+                    </p>
+                  </div>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        <strong>For local host</strong>
+                        -
+                        <ol class="ordered-list">
+                          <li>Open you command prompt</li>
+                          <li>
+                            <code>yarn install</code> #or
+                            <code>npm install</code>
+                          </li>
+                          <li>
+                            <code>yarn run dev</code> #or
+                            <code>npm run dev</code> (will start the dev server)
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                    <br />
+                    <br />
+                    <ol class="ordered-list">
+                      <li>
+                        <strong>For locally build</strong>
+                        -
+                        <ol class="ordered-list">
+                          <li>Open you command prompt</li>
+                          <li>
+                            <code>yarn build</code> #or
+                            <code>npm run build </code> (will build locally and
+                            generate public directory)
+                          </li>
+                          <li>Just upload build folder on your server</li>
+                        </ol>
+                      </li>
+                    </ol>
+                    <br />
+                    <br />
+                  </div>
+                </article>
+
+                <article
+                  class="documentation_body doc-section"
+                  id="basic_site_setting"
+                >
+                  <div
+                    class="shortcode_title"
+                    id="change_site_title_and_favicon"
+                  >
+                    <h2 class="load-order-2">Change Site Title, Favicon and</h2>
+                    <p>
+                      To change your Site title and Favicon open Matias folder
+                      in your editor and go to the location by following
+                      screenshot which are given bellow.
+                    </p>
+                    <br />
+                    <p>
+                      <b>main.jsx and index.html</b> is root file & every components/page will
+                      render in this file . And we can use <code>meta</code> ,
+                      <code>link</code> , <code>title</code> etc. in head tag
+                      for every pages .
+                    </p>
+
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/basic-setting/change_site_title.png"
+                        alt="go to Appearance -> Import Demo
+                                        Data"
+                      />
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/basic-setting/change_site_title2.png"
+                        alt="go to Appearance -> Import Demo
+                                        Data"
+                      />
+                    </figure>
+                  </div>
+
+                  <div class="shortcode_title" id="change_logo">
+                    <h2 class="load-order-2">Change Logo</h2>
+                    <p>
+                      To change logo and customize other header data do the
+                      following:
+                    </p>
+                    <div class="steps-panel">
+                      <ol class="ordered-list">
+                        <li>
+                          From the project folder go to
+                          <span class="direction_steps">
+                            <span class="direction_step">public </span>
+                            <span class="direction_step">images</span>
+                            <span class="direction_step">
+                              there we have all the images to use
+                            </span>
+                          </span>
+                        </li>
+                        <li>
+                          From the project folder go to
+                          <span class="direction_steps"
+                            ><span class="direction_step">src </span
+                            ><span class="direction_step">Components</span>
+                            <span class="direction_step">Header</span>
+                            <span class="direction_step">Header.jsx</span>
+                            <span class="direction_step"
+                              >Open the header where you want to use</span
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          Then change the logo as well as you can also change
+                          other data
+                        </li>
+                        <li>In Footer we can change logo by the same way.</li>
+                      </ol>
+                      <p>
+                        To change your logo following screenshot which are given
+                        bellow.
+                      </p>
+                    </div>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/basic-setting/change_logo.png"
+                        alt="Go to Dashboard> Matias template
+                                        Options > General > upload your logo
+                                        from here."
+                      />
+                      <figcaption class="text-center">
+                        By folllowing this screenshot you can change your Logo
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="shortcode_title" id="customize_menu">
+                    <h2 class="load-order-2">Customize Menu</h2>
+                    <p>To customize menu do the following:</p>
+                    <div class="steps-panel">
+                      <ol class="ordered-list">
+                        <li>
+                          From the project folder go to
+                          <span class="direction_steps"
+                            ><span class="direction_step">src </span
+                            ><span class="direction_step">components</span>
+                            ><span class="direction_step">Header</span>
+                            <span class="direction_step">Header.jsx</span>
+                          </span>
+                        </li>
+                        <li>
+                          Create new <b>menu</b> option in a <code>li</code> tag
+                          and always use <code>li</code> before end
+                          <code>ul</code> tag .
+                        </li>
+                        <li>
+                          And for routing next.js provide us
+                          <code>Link</code> tag, import it and use it like below
+                          screenshots
+                        </li>
+                        <li>
+                          Then in <code>Link ></code> <code>href =""</code> use
+                          page's folder name
+                        </li>
+                        <li>
+                          Then customize the menu data following the screenshot
+                        </li>
+                        <li>
+                          Use same way to change menu data for mobile devices
+                        </li>
+                      </ol>
+                    </div>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="https://i.sstatic.net/kXGhJ.png"
+                        alt="Customize the menu."
+                      />
+                      <figcaption class="text-center">
+                        Customize the menu
+                      </figcaption>
+                    </figure>
+                  </div>
+                </article>
+
+                <article class="documentation_body doc-section" id="page">
+                  <div class="shortcode_title" id="customize_components">
+                    <h2 class="load-order-2">Customize Components</h2>
+                    <p>To create a new page do the following:</p>
+                    <div class="steps-panel">
+                      <ol class="ordered-list">
+                        <li>
+                          There is all components you have to import from
+                          <span class="direction_steps">
+                            <span class="direction_step">src </span>
+                            <span class="direction_step">components</span>
+                          </span>
+                        </li>
+                        <li>
+                          From the project folder go to
+                          <span class="direction_steps"
+                            ><span class="direction_step">src</span
+                            ><span class="direction_step"> app </span></span
+                          >
+                          folder and import component where you want to
+                          customize
+                        </li>
+
+                        <li>
+                          <b>page.js / page.jsx</b>
+                          is the main page there will stay all components .
+                        </li>
+                      </ol>
+                      <p>
+                        To solve it follow screenshots which are given below
+                      </p>
+                    </div>
+
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/page/components.png"
+                        alt="Customize components"
+                      />
+                      <figcaption class="text-center">
+                        Customize Components
+                      </figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="shortcode_title" id="create_new_section">
+                    <h2 class="load-order-2">Create a new section</h2>
+                    <p>To create a new page do the following:</p>
+                    <div class="steps-panel">
+                      <ol class="ordered-list">
+                        <li>
+                          From the project folder go to
+                          <span class="direction_steps"
+                            ><span class="direction_step">src </span>
+                            <span class="direction_step">Components</span>
+                            <span class="direction_step"
+                              >Then create [your-section-name].js/jsx file</span
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          Inner the file create a function and write your code
+                        </li>
+                        <li>Then return your all data as a jsx code</li>
+                        <li>
+                          At last you have to export this function where you put
+                          your data
+                        </li>
+                        <li>
+                          then import that file to
+                          <span class="direction_step">app</span> folder and
+                          select folder where you want to put
+                        </li>
+                      </ol>
+                    </div>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/page/create_new_section.png"
+                        alt="Create a new page"
+                      />
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/page/components.png"
+                        alt="Create a new page"
+                      />
+                      <figcaption class="text-center">
+                        Create a new section
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="shortcode_title" id="create_new_page">
+                    <h2 class="load-order-2">Create a new page</h2>
+                    <p>To create a new page do the following:</p>
+                    <div class="steps-panel">
+                      <ol class="ordered-list">
+                        <li>
+                          From the project folder go to
+                          <span class="direction_steps"
+                            ><span class="direction_step">src </span>
+                            <span class="direction_step">app</span>
+                            <span class="direction_step"
+                              >Then create a folder & use your page name</span
+                            >
+                            <span class="direction_step"
+                              >Then create page.js/jsx file</span
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          Inner the file create a function and write your code
+                        </li>
+                        <li>Then return your all data as a jsx code</li>
+                        <li>
+                          At last you have to export this function where you put
+                          your data
+                        </li>
+
+                        <li>
+                          Now you have to link in the menu or where you want to
+                          go to this page by clicking
+                        </li>
+                        <li>
+                          to routing your page use your pages folder name .
+                        </li>
+                      </ol>
+                      <p>
+                        To done this process follow the screenshots which are
+                        given bellow.
+                      </p>
+                    </div>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/page/components.png"
+                        alt="Create a new page"
+                      />
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Matias/basic-setting/menu_data.png"
+                        alt="Create a new page"
+                      />
+
+                      <figcaption class="text-center">
+                        Create a new page
+                      </figcaption>
+                    </figure>
+                  </div>
+                </article>
+
+                <article class="documentation_body doc-section" id="styles">
+                  <div class="shortcode_title">
+                    <h2 class="load-order-2" id="global_color_options_title">
+                      Change Styles
+                    </h2>
+                    <p>
+                      To change Global style
+                      <span class="direction_steps"
+                        ><span class="direction_step">src </span
+                        ><span class="direction_step">styles </span
+                        ><span class="direction_step">style.css</span></span
+                      >
+                    </p>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="https://mrwweb.com/wp-content/uploads/2022/02/Screenshot-2022-02-21-195306.png"
+                        alt="Change Global Color Options"
+                        
+                      />
+                      <figcaption class="text-center">
+                        Change Global Color Options Setting
+                      </figcaption>
+                    </figure>
+                  </div>
+                </article>
+                <article class="documentation_body doc-section" id="change-log">
+                  <div class="shortcode_title">
+                    <h2 class="load-order-2" id="changelog_title">
+                      Change Log
+                    </h2>
+                    <p>
+                      Our team never stops Improving, bug fixes, and
+                      improvements. See What's New. We recommend you to read the
+                      changelog for every update.
+                    </p>
+                  </div>
+                  <div class="changelog_inner">
+                    <div class="row changelog_info" id="v100">
+                      <div class="col-lg-3 changelog_date">
+                        <div class="c_date">
+                          <h6>04 Nov 2023</h6>
+                          <p>Init release</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="version_info">
+                          <div class="c_version">1.0.0</div>
+                          <div class="line bottom_half"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <div class="changelog_content">
+                          <p><span class="new">New</span>template release</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border_bottom"></div>
+                  <div class="row feedback_link">
+                    <div class="col-lg-6">
+                      <h6>
+                        <i class="icon_mail_alt"></i>Still stuck?
+                        <a
+                          href="https://themeforest.net/user/theme_ocean"
+                          >How can we help?</a
+                        >
+                      </h6>
+                    </div>
+                    <div class="col-lg-6">
+                      <p>
+                        If you like our product.
+                        <a
+                          href="https://themeforest.net/user/theme_ocean"
+                          class="h_btn"
+                          >Please Rate Us</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 doc_right_mobile_menu">
+              <div class="open_icon" id="right">
+                <i class="arrow_carrot-left"></i>
+                <i class="arrow_carrot-right"></i>
+              </div>
+              <div class="doc_rightsidebar">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    id="rvfs-controllers"
+                    class="fontsize-controllers group"
+                  ></div>
+                  <a href="javascript:window.print()" class="print"
+                    ><i class="icon_printer"></i
+                  ></a>
+                </div>
+                <div class="doc_switch">
+                  <label for="something" class="tab-btn tab-btns"
+                    ><i class="icon_lightbulb_alt"></i
+                  ></label>
+                  <input
+                    type="checkbox"
+                    name="something"
+                    id="something"
+                    class="tab_switcher"
+                  />
+                  <label for="something" class="tab-btn"
+                    ><i class="far fa-moon"></i
+                  ></label>
+                </div>
+                <div class="hire-us">
+                  <p class="explanation hire expn-left">
+                    If you need the template customization or custom development
+                    services please contact us. <br /><br /><a
+                      href="https://themeforest.net/user/theme_ocean"
+                      class="action_btn btn_small"
+                      >Click Here<i class="arrow_right"></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="simple_footer">
+        <img
+          class="leaf_right"
+          src="img/home_one/leaf_footter.png"
+          alt="Matias"
+        />
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p>
+                © 2023 All Rights Reserved by
+                <a href="https://themeforest.net/user/theme_ocean">theme_ocean</a>
+              </p>
+            </div>
+            <div class="col-lg-6 text-right">
+              <ul class="list-unstyled f_social_icon"></ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/anchor.js"></script>
+    <script src="assets/wow/wow.min.js"></script>
+    <script src="assets/prism/prism.js"></script>
+    <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
+    <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/magnify-pop/jquery.magnific-popup.min.js"></script>
+    <script src="assets/tooltipster/js/tooltipster.bundle.min.js"></script>
+    <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.js"></script>
+    <script src="assets/video/video.min.js"></script>
+    <script src="assets/video/wistia.js"></script>
+    <script src="js/onpage-menu.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
