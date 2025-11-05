@@ -1,5 +1,5 @@
 """
-URL configuration for EmployeeDept project.
+URL configuration for ModelFormValidator project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -17,16 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import *
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('display_dept/',display_dept ,name='display_dept'),
-    path('display_emp/',display_emp,name='display_emp'),
-    path('insert_dept/',insert_dept,name='insert_dept'),
-    path('insert_employee/',insert_employee,name='insert_employee'),
-    path('empToDeptjoin/',empToDeptjoin,name='empToDeptjoin'),
-    path('EmpToMgrjoin/',EmpToMgrjoin,name='EmpToMgrjoin'),
-    path('EmpToDeptAndMgr/',EmpToDeptAndMgr,name='EmpToDeptAndMgrjoin'),
-    path('EmpToDeptByPR/',EmpToDeptByPR,name='EmpToDeptByPR'),
-
-
+    path('insert_Student/',insert_Student,name='insert_Student'),
 ]
