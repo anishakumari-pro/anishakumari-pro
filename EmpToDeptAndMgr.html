@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <center>
+            <table border="2px" >
+                <h1>EmpToDeptAndMgr</h1>
+              <thead>
+                <tr>
+                  <th>empno</th>
+                  <th>ename</th>
+                  <th>job</th>
+                  <th>sal</th>
+                  <th>comm</th>
+                  <th>hiredate</th>
+                  <th>deptno</th>
+                  <th>MGR</th>
+    
+                  <th>Deptdname</th>
+                  <th>Deptdeptno</th>
+                  <th>Deptdlocation</th>
+
+                  <th>Mgrempno</th>
+                  <th>Mgrename</th>
+                  <th>Mgrjob</th>
+                  <th>Mgrsal</th>
+                  <th>Mgrcomm</th>
+                  <th>Mgrhiredate</th>
+                  <th>Mgrdeptno</th>
+                   <th>Mgrmgr</th>
+                
+                </tr>
+    
+              </thead>
+              <tbody>{% for EDMO in QLEDMO %}
+                <tr>
+                  <td>{{EDMO.empno}}</td>
+                  <td>{{EDMO.ename}}</td>
+                  <td>{{EDMO.job}}</td>
+                  <td>{{EDMO.sal}}</td>
+                  <td>{{EDMO.comm}}</td>
+                  <td>{{EDMO.hiredate}}</td>
+                  <td>{{EDMO.deptno}}</td>
+                  <td>{{EDMO.mgr}}</td>
+                  
+                  <td>{{EDMO.deptno.dname}}</td>
+                  <td>{{EDMO.deptno.deptno}}</td>
+                  <td>{{EDMO.deptno.dloc}}</td>
+  
+                  
+                  <td>{{EDMO.mgr.empno}}</td>
+                  <td>{{EDMO.mgr.ename}}</td>
+                  <td>{{EDMO.mgr.job}}</td>
+                  <td>{{EDMO.mgr.sal}}</td>
+                  <td>{{EDMO.mgr.comm}}</td>
+                  <td>{{EDMO.mgr.hiredate}}</td>
+                  <td>{{EDMO.mgr.deptno}}</td>
+                  <td>{{EDMO.mgr.mgr}}</td>
+                </tr>
+              {% endfor %}</tbody>
+            
+            </table>
+    </center>
+    
+</body>
+</html>
